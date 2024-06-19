@@ -4,71 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venturing Crew 22</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #444;
-        }
-        nav a {
-            color: white;
-            padding: 15px 20px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            background-color: #555;
-        }
-        .container {
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Venturing Crew 22</h1>
+        <div class="header-container">
+            <h1>Venturing Crew 22</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Calendar</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Sign In</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Calendar</a>
-        <a href="#">Sign Up</a>
-        <a href="#">Sign In</a>
-    </nav>
-    <div class="container">
-        <h2>About Venturing Crews</h2>
-        <p>BSA Venturing is an inclusive program through the Boy Scouts of America for males and females aged 14-21 (or 13 and completed the 8th grade). It's operated through Venturing Crews, units of youth and advisors that meet on set schedules and plan activities and events for youth like you!</p>
-        
-        <h2>Join the Crew 22 Community</h2>
-        <a href="https://my.scouting.org">Join Crew 22</a>
-        
-        <h2>Subscribe</h2>
-        <p>Sign up to receive all updates about Crew 22.</p>
-        <form>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-            <button type="submit">Sign Up</button>
-        </form>
-    </div>
+    <main>
+        <section class="about">
+            <h2>About Venturing Crews</h2>
+            <p>BSA Venturing is an inclusive program through the Boy Scouts of America for males and females aged 14-21 (or 13 and completed the 8th grade). It's operated through Venturing Crews, units of youth and advisors that meet on set schedules and plan activities and events for youth like you!</p>
+        </section>
+        <section class="join">
+            <h2>Join the Crew 22 Community</h2>
+            <a href="https://my.scouting.org" class="button">Join Crew 22</a>
+        </section>
+        <section class="subscribe">
+            <h2>Subscribe</h2>
+            <p>Sign up to receive all updates about Crew 22.</p>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+    </main>
     <footer>
         <p>&copy; 2023 BSA Crew 22 - All Rights Reserved. Chartered by Prince of Peace Episcopal Church.</p>
         <p>This website uses cookies to analyze website traffic and optimize your website experience.</p>
